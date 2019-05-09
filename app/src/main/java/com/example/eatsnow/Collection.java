@@ -9,7 +9,7 @@ public class Collection {
     private int res_count;
     private String share_url;
 
-    //Setter functions
+    //Constructor function
     public Collection(int collection_id, String title, String url, String description, String image_url, int res_count, String share_url) {
         this.collection_id = collection_id;
         this.title = title;
