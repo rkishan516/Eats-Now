@@ -138,7 +138,7 @@ public final class QueryUtils {
             return null;
         }
 
-        // Create an empty ArrayList that we can start adding collection to
+        // Create an empty ArrayList that we can start adding collection_item to
         List<Collection> collections = new ArrayList<>();
 
         // Try to parse the JSON response string. If there's a problem with the way the JSON
@@ -149,11 +149,11 @@ public final class QueryUtils {
             // Create a JSONObject from the JSON response string
             JSONArray collectionArray = new JSONArray(collectionJSON);
 
-            // For each collection in the collectionArray, create an {@link Collection} object
+            // For each collection_item in the collectionArray, create an {@link Collection} object
             for (int i = 0; i < collectionArray.length(); i++) {
 
 
-                // Get a single collection at position i within the list of collections
+                // Get a single collection_item at position i within the list of collections
                 JSONObject currentCollection = collectionArray.getJSONObject(i);
 
                 // Extract the value for the key called "collection_id"
@@ -189,7 +189,7 @@ public final class QueryUtils {
             // If an error is thrown when executing any of the above statements in the "try" block,
             // catch the exception here, so the app doesn't crash. Print a log message
             // with the message from the exception.
-            Log.e("QueryUtils", "Problem parsing the collection JSON results", e);
+            Log.e("QueryUtils", "Problem parsing the collection_item JSON results", e);
         }
 
         // Return the list of earthquakes

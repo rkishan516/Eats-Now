@@ -37,7 +37,7 @@ public class CollectionAdapter extends ArrayAdapter {
         return super.getItemId(position);
     }
 
-    
+
 
     @NonNull
     @Override
