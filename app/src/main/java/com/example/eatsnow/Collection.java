@@ -10,7 +10,7 @@ public class Collection {
     private String share_url;
   
     //Constructor Function
-    public Collection(int collection_id,String title,String url, String discription, String image_url,int res_count, String share_url){
+    public Collection(int collection_id,String title,String url, String description, String image_url,int res_count, String share_url){
         this.collection_id = collection_id;
         this.title = title;
         this.url = url;
