@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.eatsnow.activity.DashboardActivity">
+
+    <item android:title="@string/search"
+        android:id="@+id/menu_source_search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="110"
+        android:contentDescription="@string/performs_the_search_operation"
+        app:showAsAction="always"
+        />
+
+</menu>
